@@ -1,0 +1,84 @@
+/* Login and Sign Up styling */
+body {
+    font-family: "Raleway", sans-serif;
+    font-family: "Playfair Display", system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(190, 119, 237, 0.5);
+    background-image: url('https://t4.ftcdn.net/jpg/08/97/91/67/360_F_897916750_YcsUrgSf21qmMAWnLuBrQD14s0n9M0pz.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #221629;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.login-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.login-box label {
+    display: block;
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #9F9FED;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.login-box .checkbox-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #221629;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #9F9FED;
+    color: #221629;
+}
+
+.login-box p {
+    font-size: 0.9em;
+}
+
+.login-box a {
+    color: #FFC8DD;
+    text-decoration: none;
+}
+.form-container
+{
+    
+}

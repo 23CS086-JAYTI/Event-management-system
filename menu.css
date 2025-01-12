@@ -1,0 +1,82 @@
+/* Menu Page Styling */
+.menu-page {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-page h1 {
+    font-size: 5em;
+    color: #2b0741;
+    margin-bottom: 10px;
+}
+
+.menu-page p {
+    font-size: 1.2em;
+    color: #4d274b;
+    margin-bottom: 30px;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-box {
+    background-color: rgba(250, 250, 250, 0.95);
+    border: 2px solid #9F9FED;
+    border-radius: 10px;
+    width: 300px; /* Increased width for dish names */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-box h3 {
+    color: #2b0741;
+    font-size: 1.2em; /* Reduced font size for title items */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Dish Names Styling */
+.menu-box label {
+    display: block; /* Each dish listed vertically */
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #F2DFD7;
+    border-radius: 5px;
+    color: #221629;
+    font-size: 1em; /* Adjust font size as needed */
+}
+
+.menu-box label:hover {
+    background-color: #D4C1EC;
+}
+
+/* Back Button Styling */
+.back-button {
+    margin-top: 30px;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2b0741;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #9F9FED;
+}

@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#8654a2;
+    background-image: linear-gradient(rgb(190, 119, 237, 0.5), rgba(190, 119, 237, 0.5)), url('https://t4.ftcdn.net/jpg/08/97/91/67/360_F_897916750_YcsUrgSf21qmMAWnLuBrQD14s0n9M0pz.webp');
+}
+
+/* Header Section */
+header {
+    background-color: #2b0741;
+    padding: 40px 0;
+    text-align: right;
+    
+
+}
+
+header nav ul {
+    list-style: none;
+   
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 1;
+    font-size:18px;
+}
+header nav ul li::after {
+    content:'';
+    width:0%;
+    height:2px;
+    background: #ede8f1;
+    display: block ;
+    margin: auto;
+    transition:0.5s;
+}
+header nav ul li:hover::after{
+    width:100%;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(174, 94, 174, 0.9); /* Semi-transparent purple background */
+    color: white;
+    border-radius: 15px;
+}
+
+/* Blog Articles */
+.blog-articles {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.blog-articles h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.featured-article, .blog-post {
+    background-color: rgba(55, 11, 63, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featured-article img, .blog-post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.featured-article h3, .blog-post h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.featured-article p, .blog-post p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.featured-article a, .blog-post a {
+    color: #ff5a5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured-article a:hover, .blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Behind the Scenes Section */
+.behind-the-scenes {
+    flex: 1;
+    background-color: rgba(55, 11, 63, 0.9); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.behind-the-scenes h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.behind-the-scenes p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #3f003f;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1.2em;
+    margin: 0;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <div class="rectangle">
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index1.html">HOME</a></li>
+                        <li><a href="EVENT.html">EVENTS</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="review.html">REVIEW</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="text-box">
+            <h1>Share Your Experience with EventEase</h1>
+            <h3>At EventEase, we strive to make every event unforgettable. <br>
+                Your feedback helps us continually enhance our services and deliver the best experiences for all occasions. <br>
+                Please take a moment to share your thoughts—whether it's about the planning process, the event setup, or our team's dedication. 
+            </p></h3>
+            <p>
+                <h2>Let us know what you loved and what could make future events even better!<br>
+                    Tell us what you loved, what stood out, and how we can make future events even more remarkable. <br>
+                    Your insights mean the world to us, and we’re excited to hear about your EventEase experience!</h2>
+            </p>
+        </div>
+    </section>
+    <!-- Main Content -->
+    <main>
+        <section id="submit-review">
+            <h1><center>Submit Your Review</center></h1>
+            <p></p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <label for="photos">Upload Photos (Optional):</label>
+                <input type="file" id="photos" name="photos" multiple>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section id="recent-reviews">
+            <h2>Recent Reviews</h2>
+
+            <div class="review-card">
+                <h3>John Doe</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                <p><strong>Event Date:</strong> June 15, 2024</p>
+                <p>"The team did an outstanding job organizing our corporate gala. Everything went smoothly, and the attention to detail was impeccable. Highly recommend!"</p>
+            </div>
+
+            <div class="review-card">
+                <h3>Jane Smith</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>
+                <p><strong>Event Date:</strong> July 20, 2024</p>
+                <p>"Great service and a beautiful setup for our wedding. There were a few minor hiccups, but the team was quick to address them. Overall, a fantastic experience!"</p>
+            </div>
+
+            <div class="review-card">
+                <h3>Michael Johnson</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐</p>
+                <p><strong>Event Date:</strong> August 5, 2024</p>
+                <p>"The event was good, but we had some issues with the timing. The staff was friendly, though, and the venue was lovely."</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

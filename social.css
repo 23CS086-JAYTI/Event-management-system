@@ -1,0 +1,110 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color:#fff; /* Dark purple background */
+    color: #fff;
+    background-image: url('https://img.freepik.com/premium-photo/crowd-concert-with-purple-pink-lights_832479-4423.jpg');
+}
+
+/* Navigation bar */
+header nav {
+    background-color: #250b37; /* Darker purple for nav */
+    padding: 30px 15px;
+    text-align: right; /* Align the navigation to the right */
+}
+
+header nav ul {
+    list-style-type: none;
+    font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Form section styling */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: url('event-bg.jpg') no-repeat center center/cover;
+    margin-top: 50px; /* Add margin to the top of the form section to create space */
+}
+
+.container {
+    background-color: rgba(199, 167, 245, 0.7); /* Semi-transparent black */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px; /* Increased width */
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Form input fields styling */
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input, form select {
+    background-color: #e8e1fc;
+    color: #2c003e;
+}
+
+form textarea {
+    background-color: #f4f0ff;
+    color: #2c003e;
+    height: 80px; /* Reduced height for the textarea */
+}
+
+/* Submit button styling */
+button {
+    background-color: #4b007d;
+    color: rgb(243, 240, 246);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #6500a6;
+}

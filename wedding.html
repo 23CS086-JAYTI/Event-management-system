@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEase - Wedding</title>
+    <link rel="stylesheet" href="styleE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index1.html">HOME</a></li>
+                <li><a href="EVENT.html">EVENTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="review.html">REVIEW</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wedding Booking Section -->
+    <section class="welcome">
+        <h1>Plan Your Dream Wedding with EventEase!</h1>
+        <p>Fill out the form below to book your special day with us.</p>
+    </section>
+
+    <section class="booking-form">
+        <form action="/submit_booking" method="post">
+            <!-- Basic Details -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <!-- Date and Slot Selection -->
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date" required><br>
+
+            <label for="slot-duration">Select Duration (hours):</label>
+            <input type="number" id="slot-duration" name="slot-duration" min="1" max="10" required><br>
+
+            <label for="availability">Slot Availability:</label>
+            <input type="range" id="availability" name="availability" min="1" max="100" value="50" disabled>
+            <span id="availability-percentage">50% Full</span><br>
+
+            <!-- Budget Slider -->
+            <label for="budget">Budget (INR):</label>
+            <input type="range" id="budget" name="budget" min="10000" max="200000" step="1000" value="50000" oninput="document.getElementById('budgetValue').textContent = this.value">
+            <span>₹<span id="budgetValue">50000</span></span><br>
+
+            <!-- Payment Mode -->
+            <label>Mode of Payment:</label>
+            <div>
+                <input type="radio" id="credit" name="payment-mode" value="credit">
+                <label for="credit">💳 Credit Card</label>
+
+                <input type="radio" id="debit" name="payment-mode" value="debit">
+                <label for="debit">🏦 Debit Card</label>
+
+                <input type="radio" id="upi" name="payment-mode" value="upi">
+                <label for="upi">📱 UPI</label>
+            </div><br>
+
+            <!-- Location -->
+            <label for="location">Event Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location address" required><br>
+
+            <!-- Audio/DJ System -->
+            <label>Do you need a Music/DJ System?</label>
+            <input type="checkbox" id="dj" name="dj" value="yes">
+            <label for="dj">Yes</label><br>
+
+            <!-- Decoration Theme -->
+            <label for="theme">Decoration Theme:</label>
+            <textarea id="theme" name="theme" placeholder="Describe your decoration theme" required></textarea><br>
+
+            <a href="menu.html">View Menu Options</a><br><br>
+
+            <!-- Wedding Dress Rental Section -->
+            <label>Wedding Dress on Rent:</label><br>
+            <label for="dress-style">Select Dress Style:</label>
+            <select id="dress-style" name="dress-style" required>
+                <option value="traditional">Traditional</option>
+                <option value="modern">Modern</option>
+                <option value="boho">Bohemian</option>
+                <option value="luxury">Luxury</option>
+            </select><br><br>
+
+            <label for="dress-size">Dress Size:</label>
+            <input type="text" id="dress-size" name="dress-size" placeholder="Enter size (e.g., Small, Medium, Large)" required><br>
+
+            <label for="dress-budget">Dress Budget (INR):</label>
+            <input type="range" id="dress-budget" name="dress-budget" min="5000" max="100000" step="1000" value="15000" oninput="document.getElementById('dressBudgetValue').textContent = this.value">
+            <span>₹<span id="dressBudgetValue">15000</span></span><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 EventEase - All rights reserved</p>
+    </footer>
+
+    <!-- JavaScript to update slot availability percentage -->
+    <script>
+        document.getElementById('event-date').addEventListener('change', function() {
+            const randomPercentage = Math.floor(Math.random() * 100);
+            document.getElementById('availability').value = randomPercentage;
+            document.getElementById('availability-percentage').textContent = randomPercentage + '% Full';
+        });
+    </script>
+</body>
+</html>
+s

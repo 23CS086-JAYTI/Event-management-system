@@ -1,0 +1,32 @@
+body {
+    background-color: #f0f0f0; /* Example background color */
+    font-family: Arial, sans-serif; /* Example font family */
+}
+
+.form-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
